@@ -513,14 +513,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url="https://t.me/+AJCnlql9y4o4MjJl"),
-                    InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇꜱ', url="https:t.me/TazHD")
-                  ]]
+            InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ], [
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url='https://t.me/+AJCnlql9y4o4MjJl'),
+            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇꜱ', url='https://t.me/TazHD')
+        ], [
+            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+        ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -538,8 +538,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='cynite_filstr')
         ], [
-            InlineKeyboardButton('Iᴍᴅʙ', callback_data='cynite_imdb'),
-            InlineKeyboardButton('Mɪsᴄ', callback_data='cynite_misc')
+            InlineKeyboardButton('ɪᴍᴅʙ', callback_data='cynite_imdb'),
+            InlineKeyboardButton('ᴍɪsᴄ', callback_data='cynite_misc')
         ], [
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start')
         ]]
