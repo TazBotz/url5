@@ -513,13 +513,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('ℹ️Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('😊Aʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🔍Sᴇᴀʀᴄʜ', url="https://t.me/+AJCnlql9y4o4MjJl"),
-                    InlineKeyboardButton('🤖Uᴘᴅᴀᴛᴇꜱ', url="https:t.me/TazHD")
+                    InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url="https://t.me/+AJCnlql9y4o4MjJl"),
+                    InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇꜱ', url="https:t.me/TazHD")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -541,7 +541,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Iᴍᴅʙ', callback_data='cynite_imdb'),
             InlineKeyboardButton('Mɪsᴄ', callback_data='cynite_misc')
         ], [
-            InlineKeyboardButton('🏠Hᴏᴍᴇ', callback_data='start')
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
