@@ -538,10 +538,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='cynite_filstr')
         ], [
-            InlineKeyboardButton('ɪᴍᴅʙ', callback_data='cynite_imdb'),
-            InlineKeyboardButton('ᴍɪsᴄ', callback_data='cynite_misc')
-        ], [
-            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start')
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅᴇ', callback_data='extra')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -618,7 +616,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⟸ ɪᴍᴅʙ', callback_data='cynite_imdb'),
+            InlineKeyboardButton('⟸ ᴍɪꜱᴄ', callback_data='cynite_misc')
+        ],[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
