@@ -1166,8 +1166,8 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         btn = [[
-            InlineKeyboardButton(' ɢᴏᴏɢʟᴇ ', url=f"https://google.com/search?q={search}"),
-            InlineKeyboardButton('ɪɴsᴛʀᴜᴄᴛɪᴏɴs', callback_data='splmd')
+            InlineKeyboardButton(' 🔍ɢᴏᴏɢʟᴇ ', url=f"https://google.com/search?q={search}"),
+            InlineKeyboardButton('ℹ️ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ', callback_data='splmd')
         ]]           
         k = await msg.reply_photo(photo=SPELL_IMG, caption=script.CUDNT_FND, reply_markup=InlineKeyboardMarkup(btn))    
         await asyncio.sleep(SPL_DELETE_TIME)
@@ -1177,17 +1177,17 @@ async def advantage_spell_chok(msg):
     SPELL_CHECK[msg.id] = movielist
     btn = [[
         InlineKeyboardButton(
-            text="ɪɴsᴛʀᴜᴄᴛɪᴏɴs",
+            text="ℹ️ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ",
             callback_data="splmd"
         ),
         InlineKeyboardButton(
-            text="ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ",
-            url=f"t.me/{SUPPORT_CHAT}"
+            text="ℹ️ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ",
+            url=f"https://google.com/search?q={search}"
         )
     ],[
         InlineKeyboardButton(
-            text="🕵️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️",
-            url=f"https://google.com/search?q={search}"
+            text="🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ",
+            url=f"t.me/{SUPPORT_CHAT}"
         )
     ]]
     spell_check_del = await msg.reply_photo(
