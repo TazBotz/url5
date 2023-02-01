@@ -616,8 +616,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('⟸ ɪᴍᴅʙ', callback_data='cynite_imdb'),
-            InlineKeyboardButton('⟸ ᴍɪꜱᴄ', callback_data='cynite_misc')
+            InlineKeyboardButton('ɪᴍᴅʙ', callback_data='cynite_imdb'),
+            InlineKeyboardButton('ᴍɪꜱᴄ', callback_data='cynite_misc')
         ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
         ]]
@@ -641,6 +641,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
+        ],[
+            InlineKeyboardButton('🧑🏻‍💻 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -697,7 +699,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "cynite_imdb":
             imdbbtn = [[
-                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="extra")
                      ]]
             reply_markup = InlineKeyboardMarkup(imdbbtn)
             await query.message.edit_text(
@@ -707,7 +709,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "cynite_misc":
             miscbtn = [[
-                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="extra")
                      ]]
             reply_markup = InlineKeyboardMarkup(miscbtn)
             await query.message.edit_text(
