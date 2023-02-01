@@ -1166,8 +1166,10 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         btn = [[
-            InlineKeyboardButton(' 🔍ɢᴏᴏɢʟᴇ ', url=f"https://google.com/search?q={search}"),
+            InlineKeyboardButton('ℹ️ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ', url=f"https://google.com/search?q={search}"),
             InlineKeyboardButton('ℹ️ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ', callback_data='splmd')
+        ],[
+            InlineKeyboardButton('🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ', url=f"t.me/{SUPPORT_CHAT}")
         ]]           
         k = await msg.reply_photo(photo=SPELL_IMG, caption=script.CUDNT_FND, reply_markup=InlineKeyboardMarkup(btn))    
         await asyncio.sleep(SPL_DELETE_TIME)
