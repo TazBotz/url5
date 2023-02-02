@@ -23,7 +23,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/5c586e00f34665267ab5b.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/94750f782f45f592b823f.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/63203ed7f3f165b0ad7c9.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/6dbf62821c892f032b274.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jpg")
 
 # Admins, Channels & Users
