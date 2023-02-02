@@ -9,8 +9,8 @@ class script(object):
 
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
-<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/XKunalBot>𝕏 𝖪ᴜɴᴀʟ࿐</a></b>
+    ABOUT_TXT = """<b>✯ Bᴏᴛ Nᴀᴍᴇ : {}</b>
+<b>✯ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/XKunalBot>𝕏 𝖪ᴜɴᴀʟ࿐</a></b>
 <b>✯ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ 𝟹</b>
 <b>✯ Dᴀᴛᴀ Bᴀꜱᴇ : Mᴏɴɢᴏ ᴅʙ</b>
 <b>✯ Bᴏᴛ Sᴇʀᴠᴇʀ : Hᴇʀᴏᴋᴜ</b>
