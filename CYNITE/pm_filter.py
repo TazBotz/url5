@@ -628,20 +628,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "admin":
-        if query.from_user.id not in ADMINS:
-            await query.answer("only admins", show_alert = True)
-            return
-        mess_id = query.data.split()[1]
-        bmess_id = query.data.split()[2]
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='owner_info')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        if quary.from_user.id in ADMINS:
+            await client.edit_message_media(
+                query.message.chat.id,
+                query.message.id,
+                InputMediaPhoto(random.choice(PICS))
+        )
         await query.message.edit_text(
             text=script.ADMIN_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    else:
+        await query.answer("Only For My Admins", show_alert=true)
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
