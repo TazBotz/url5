@@ -641,8 +641,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
-        ],[
-            InlineKeyboardButton('🧑🏻‍💻 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -678,8 +676,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "owner_info":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="about"),
-                    InlineKeyboardButton('Sᴜᴅᴏ', callback_data='admin')
+                    InlineKeyboardButton('Sᴜᴅᴏ Mᴀꜱᴛᴇʀ', callback_data='admin'),
+                    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+                  ],[
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
