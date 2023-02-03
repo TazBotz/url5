@@ -107,11 +107,11 @@ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ- <a href=https://t.me/XKunalBot>Cʟɪᴄᴋ Hᴇʀᴇ
 • /gfilters - <code>ᴛᴏ ᴠɪᴇᴡ ʟɪsᴛ ᴏғ ᴀʟʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs<code>
 • /delg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ</code>"""
 
-    STATUS_TXT = """<b>ᴛᴏᴛᴀʟ ғɪʟᴇs :</b> <code>{}</code>
-<b>ᴜsᴇʀs:</b> <code>{}</code>
-<b>ᴄʜᴀᴛꜱ:</b> <code>{}</code>
-<b>ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
-<b>ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
+    STATUS_TXT = """<b>✯ Tᴏᴛᴀʟ Fɪʟᴇs :</b> <code>{}</code>
+<b>✯ Tᴏᴛᴀʟ Usᴇʀs:</b> <code>{}</code>
+<b>✯ Tᴏᴛᴀʟ Cʜᴀᴛꜱ:</b> <code>{}</code>
+<b>✯ Uꜱᴇᴅ Sᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
+<b>✯ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
 
 <b><a href=https://t.me/XKunalBot>~ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ 𝕏 𝖪ᴜɴᴀʟ࿐</a></b>"""
 
