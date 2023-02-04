@@ -631,7 +631,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id not in ADMINS:
             await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert = True)
             return
-        await query.message.delete() 
+        await query.message.delete()
+    else: 
         if query.from_user.id in ADMINS:
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='owner_info')
