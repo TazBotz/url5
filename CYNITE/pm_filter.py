@@ -628,9 +628,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "admin":
-        if query.from_user.id not in ADMINS:
-            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert = True)
-    else:
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='owner_info')
         ]]
@@ -640,6 +637,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    else:
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert = True)
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
