@@ -629,8 +629,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         if query.from_user.id not in ADMINS:
-        await query.answer("Only For My Admins", show_alert=true)
-    else:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert = True)
+            return
+        await query.message.delete() 
         if query.from_user.id in ADMINS:
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='owner_info')
