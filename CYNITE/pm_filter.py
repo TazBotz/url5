@@ -637,14 +637,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.chat.id,
                 query.message.id,
                 InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.ADMIN_TXT,
-            reply_markup=reply_markup, 
-            parse_mode=enums.ParseMode.HTML
-        )
-    else:
-        await query.answer("Only For My Admins", show_alert=true)
+            )
+            await query.message.edit_text(
+                text=script.ADMIN_TXT,
+                reply_markup=reply_markup, 
+                parse_mode=enums.ParseMode.HTML
+            )
+        else:
+            await query.answer("Only For My Admins", show_alert=true)
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
