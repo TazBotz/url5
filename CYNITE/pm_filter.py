@@ -633,10 +633,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
-            await client.edit_message_media(
-                query.message.chat.id,
-                query.message.id
-            )
             await query.message.edit_text(
                 text=script.ADMIN_TXT,
                 reply_markup=reply_markup,
