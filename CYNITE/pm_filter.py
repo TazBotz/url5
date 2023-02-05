@@ -165,7 +165,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ 🔮", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("📥 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇꜱ 📥", url=HOW_DWLD_LINK)
     ])
     try:
         await query.edit_message_reply_markup(
@@ -515,11 +515,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url='https://t.me/+AJCnlql9y4o4MjJl'),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇꜱ', url='https://t.me/TazHD')
-        ], [
             InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about')
+        ], [
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url='https://t.me/+AJCnlql9y4o4MjJl'),
+            InlineKeyboardButton('📡 Uᴘᴅᴀᴛᴇꜱ', url='https://t.me/TazHD')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -989,7 +989,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ 🔮", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("📥 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇꜱ 📥", url=HOW_DWLD_LINK)
     ])
 
     if offset != "":
@@ -1173,10 +1173,10 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         btn = [[
-            InlineKeyboardButton('ℹ️ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ', url=f"https://google.com/search?q={search}"),
-            InlineKeyboardButton('ℹ️ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ', callback_data='splmd')
+            InlineKeyboardButton('ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ', url=f"https://google.com/search?q={search}"),
+            InlineKeyboardButton('ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ', callback_data='splmd')
         ],[
-            InlineKeyboardButton('🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ', url=f"t.me/{SUPPORT_CHAT}")
+            InlineKeyboardButton('🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ🧑🏻‍💻', url=f"t.me/{SUPPORT_CHAT}")
         ]]           
         k = await msg.reply_photo(photo=SPELL_IMG, caption=script.CUDNT_FND, reply_markup=InlineKeyboardMarkup(btn))    
         await asyncio.sleep(SPL_DELETE_TIME)
@@ -1186,16 +1186,16 @@ async def advantage_spell_chok(msg):
     SPELL_CHECK[msg.id] = movielist
     btn = [[
         InlineKeyboardButton(
-            text="ℹ️ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ",
+            text="ɪɴꜱᴛᴜʀᴄᴛɪᴏɴ",
             callback_data="splmd"
         ),
         InlineKeyboardButton(
-            text="ℹ️ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ",
+            text="ᴄʜᴇᴄᴋ ꜱᴘᴇʟʟɪɴɢ",
             url=f"https://google.com/search?q={search}"
         )
     ],[
         InlineKeyboardButton(
-            text="🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ",
+            text="🧑🏻‍💻Rᴇǫᴜᴇ𝗌ᴛ ᴛᴏ Aᴅᴍɪɴ🧑🏻‍💻",
             url=f"t.me/{SUPPORT_CHAT}"
         )
     ]]
