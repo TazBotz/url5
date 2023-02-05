@@ -47,11 +47,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘꜱ', callback_data='help'),
-            InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about')
-            ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url='https://t.me/+AJCnlql9y4o4MjJl'),
             InlineKeyboardButton('📡 Uᴘᴅᴀᴛᴇ', url='https://t.me/TazHD')
+            ],[
+            InlineKeyboardButton('ℹ️ Hᴇʟᴘꜱ', callback_data='help'),
+            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -95,11 +95,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘꜱ', callback_data='help'),
-            InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about')
-            ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', url='https://t.me/+AJCnlql9y4o4MjJl'),
             InlineKeyboardButton('📡 Uᴘᴅᴀᴛᴇ', url='https://t.me/TazHD')
+            ],[
+            InlineKeyboardButton('ℹ️ Hᴇʟᴘꜱ', callback_data='help'),
+            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
