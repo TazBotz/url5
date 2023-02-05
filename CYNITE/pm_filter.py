@@ -639,7 +639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
         else:
-            await query.answer("Only For My Admins", show_alert = True)
+            await query.answer("Sᴏʀʀʏ!! ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴍʏ Aᴅᴍɪɴꜱ⚠️", show_alert = True)
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
