@@ -50,7 +50,7 @@ async def start(client, message):
                     InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🔄 Mᴏʀᴇ', callback_data='help'),
+                    InlineKeyboardButton('🔄 Mᴏʀᴇ', callback_data='morchl'),
                     InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data'),
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -98,7 +98,7 @@ async def start(client, message):
                     InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🔄 Mᴏʀᴇ', callback_data='help'),
+                    InlineKeyboardButton('🔄 Mᴏʀᴇ', callback_data='morchl'),
                     InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data'),
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
