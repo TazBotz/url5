@@ -513,13 +513,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🧑🏻‍💻 Aʙᴏᴜᴛ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('🔄 Mᴏʀᴇ', callback_data='help'),
+                    InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data'),
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -560,6 +560,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_LINK),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "morchl":
+        buttons = [[
+            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url='t.me/TazHD'),
+            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url='https://t.me/+AJCnlql9y4o4MjJl')
+        ],[
+            InlineKeyboardButton('Nᴇᴡ ʜᴅ Mᴏᴠɪᴇ', url='https://t.me/+5M64kC0935k0MTFl'),
+            InlineKeyboardButton('🏠 Mᴀɪɴ Mᴇɴᴜ', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.MORCHL_TXT.format(temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
