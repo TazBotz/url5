@@ -56,7 +56,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton("ʜᴇʟᴘ📌", url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton("📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📡", url=f'https://t.me/{CHNL_LNK}')
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -65,7 +65,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
                 photo="https://telegra.ph/file/5c586e00f34665267ab5b.jpg",
-                caption=f"<b>🔖 ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ {u.mention},</b>\n<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {message.chat.title} !</b>\n\n<b>ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ...</b>",
+                caption=f"<b>Hᴇʏ Mʏ Fʀɪᴇɴᴅ {u.mention},</b>\n<b>Wᴇʟᴄᴏᴍᴇ Tᴏ {message.chat.title} !</b>\n\n<b>Pʟᴢ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Fɪʀꜱᴛ Bᴇꜰᴏʀᴇ Sᴇᴀʀᴄʜɪɴɢ Mᴏᴠɪᴇꜱ</b>",
                 reply_markup=InlineKeyboardMarkup(buttons))
                 await asyncio.sleep(60)
                 await temp.MELCOW['welcome'].delete()
