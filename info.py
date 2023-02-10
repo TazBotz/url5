@@ -48,7 +48,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'uucht')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001188335175))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001862872399))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001859427144))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/filchnl')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cynitemovies/3')
