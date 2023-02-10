@@ -788,7 +788,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await client.send_message(SUPPORT_GROUP, text=script.REQ_NO2,
             reply_to_message_id=int(mess_id),            
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ⚠️", url=f"{query.message.link}")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ⚠️", url=f"{query.message.link}")],[InlineKeyboardButton(text="Contact to admin", url=f"https://t.me/{SUPPORT_CHAT}")]]),
         )
     elif query.data.startswith("req_dcln"):
         if query.from_user.id not in ADMINS:
