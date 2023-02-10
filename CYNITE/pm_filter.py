@@ -788,7 +788,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await client.send_message(SUPPORT_GROUP, text=script.REQ_NO2,
             reply_to_message_id=int(mess_id),            
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ⚠️", url=f"{query.message.link}")],[InlineKeyboardButton(text="Contact to admin", url=f"https://t.me/{SUPPORT_CHAT}")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚠️Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ⚠️", url=f"{query.message.link}")],[InlineKeyboardButton(text="🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ ᴛᴏ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://t.me/{SUPPORT_CHAT}")]]),
         )
     elif query.data.startswith("req_dcln"):
         if query.from_user.id not in ADMINS:
@@ -803,7 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await client.send_message(SUPPORT_GROUP, text=script.REQ_REJECT2,
             reply_to_message_id=int(mess_id),
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ❌", url=f"{query.message.link}")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❌Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ❌", url=f"{query.message.link}")],[InlineKeyboardButton(text="🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ ᴛᴏ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://t.me/{SUPPORT_CHAT}")]]),
         )
     elif query.data.startswith("req_aval"):
         if query.from_user.id not in ADMINS:
@@ -818,7 +818,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await client.send_message(SUPPORT_GROUP, text=script.DONE_ALREADY2,
             reply_to_message_id=int(mess_id),
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ♻️", url=f"{query.message.link}")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="♻️Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ♻️", url=f"{query.message.link}")]]),
         )
     elif query.data.startswith("morbtn"):
         if query.from_user.id not in ADMINS:
