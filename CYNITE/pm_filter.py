@@ -769,7 +769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
         await query.edit_message_text(text=f"<s>{query.message.text}</s>",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="✅️ Uᴘʟᴏᴀᴅᴇᴅ ✅️", callback_data="doneupld")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="✅️ Uᴘʟᴏᴀᴅᴇᴅ ✅️", callback_data="doneupld")],[InlineKeyboardButton(text="Gᴏ ᴛᴏ Mᴇꜱꜱᴀɢᴇ", url=f"{message.link}")]])
         )
         await client.send_message(SUPPORT_GROUP, text=script.DONE_UPLOAD2,
             reply_to_message_id=int(mess_id),
@@ -784,7 +784,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
         await query.edit_message_text(text=f"<s>{query.message.text}</s>",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data="notavl")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data="notavl")],[InlineKeyboardButton(text="Gᴏ ᴛᴏ Mᴇꜱꜱᴀɢᴇ", url=f"{message.link}")]])
         )
         await client.send_message(SUPPORT_GROUP, text=script.REQ_NO2,
             reply_to_message_id=int(mess_id),            
@@ -799,7 +799,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
         await query.edit_message_text(text=f"<s>{query.message.text}</s>",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❌ Rᴇᴊᴇᴄᴛᴇᴅ ❌", callback_data="rjctreq")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❌ Rᴇᴊᴇᴄᴛᴇᴅ ❌", callback_data="rjctreq")],[InlineKeyboardButton(text="Gᴏ ᴛᴏ Mᴇꜱꜱᴀɢᴇ", url=f"{message.link}")]])
         )
         await client.send_message(SUPPORT_GROUP, text=script.REQ_REJECT2,
             reply_to_message_id=int(mess_id),
@@ -814,7 +814,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
         await query.edit_message_text(text=f"<s>{query.message.text}</s>",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="♻️ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ ♻️", callback_data="donealrd")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="♻️ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ ♻️", callback_data="donealrd")],[InlineKeyboardButton(text="Gᴏ ᴛᴏ Mᴇꜱꜱᴀɢᴇ", url=f"{message.link}")]])
         )
         await client.send_message(SUPPORT_GROUP, text=script.DONE_ALREADY2,
             reply_to_message_id=int(mess_id),
