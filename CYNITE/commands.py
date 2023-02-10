@@ -280,8 +280,7 @@ async def start(client, message):
              [
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-           ]
-             [
+           ],[
               InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data')
            ]
             ]
