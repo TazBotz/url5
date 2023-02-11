@@ -773,7 +773,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await client.send_message(SUPPORT_GROUP, text=script.DONE_UPLOAD2,
             reply_to_message_id=int(mess_id),
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cᴏᴍᴘʟᴇᴛᴇᴅ Rᴇǫᴜᴇsᴛ ✅️", url=f"{query.message.link}")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="✅Cᴏᴍᴘʟᴇᴛᴇᴅ Rᴇǫᴜᴇsᴛ✅️", url=f"{query.message.link}")]]),
         )            
     elif query.data.startswith("req_unabl"):
         if query.from_user.id not in ADMINS:
