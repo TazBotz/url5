@@ -24,8 +24,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/TazHD'),
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/XKunalBot')
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK),
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_CHAT}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -632,7 +632,7 @@ async def request(bot, message):
     await grqmsg.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup( 
            [[
-               InlineKeyboardButton(text="🤖Jᴏɪɴ Lᴏɢs Cʜᴀɴɴᴇʟ🤖", url=f"https://t.me/+PCYz7dwxANliMWIx")
+               InlineKeyboardButton(text="🤖Jᴏɪɴ Lᴏɢs Cʜᴀɴɴᴇʟ🤖", url=RQST_LOG_LINK)
            ],
            [ 
                InlineKeyboardButton(text="‼️Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ‼️", url=f"{rqmsg.link}")
