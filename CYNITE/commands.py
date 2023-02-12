@@ -632,7 +632,7 @@ async def request(bot, message):
     await grqmsg.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup( 
            [[
-               InlineKeyboardButton(text="🤖Jᴏɪɴ Rᴇǫᴜᴇsᴛ Lᴏɢs🤖", url=f"https://t.me/+PCYz7dwxANliMWIx")
+               InlineKeyboardButton(text="🤖Jᴏɪɴ Lᴏɢs Cʜᴀɴɴᴇʟ🤖", url=f"https://t.me/+PCYz7dwxANliMWIx")
            ],
            [ 
                InlineKeyboardButton(text="‼️Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ‼️", url=f"{rqmsg.link}")
