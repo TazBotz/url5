@@ -565,8 +565,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "morchl":
         buttons = [[
-            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url='t.me/TazHD'),
-            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url='https://t.me/+AJCnlql9y4o4MjJl')
+            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url=GRP_LNK)
+        ],[
+            InlineKeyboardButton('Bᴏᴛ Rᴇǫᴜᴇsᴛ Lᴏɢs Cʜᴀɴɴᴇʟ', url=RQST_LOG_LINK)
         ],[
             InlineKeyboardButton('Nᴇᴡ ʜᴅ Mᴏᴠɪᴇ', url='https://t.me/+5M64kC0935k0MTFl'),
             InlineKeyboardButton('🏠 Mᴀɪɴ Mᴇɴᴜ', callback_data='start')
