@@ -631,8 +631,11 @@ async def request(bot, message):
     asyncio.sleep(1.5)
     await grqmsg.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup( 
-           [[ 
-               InlineKeyboardButton(text="‼️ Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ‼️", url=f"{rqmsg.link}")
+           [[
+               InlineKeyboardButton(text="🤖 Bᴏᴛ Rᴇǫᴜᴇsᴛ Lᴏɢꜱ 🤖", url=f"https://t.me/+PCYz7dwxANliMWIx")
+           ],
+           [ 
+               InlineKeyboardButton(text="‼️Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ‼️", url=f"{rqmsg.link}")
            ]] 
            )
         )
