@@ -612,8 +612,6 @@ async def save_template(client, message):
 async def request(bot, message):
     if message.text in ['#request']:
         await message.reply_text(text='Use Correct Format',
-        if message.text in ['#request']:
-        await message.reply_text(text='Use Correct Format',
         reply_markup=InlineKeyboardMarkup(
             [
              [
