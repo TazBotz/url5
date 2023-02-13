@@ -8,7 +8,7 @@ from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, MSG_ALRT, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, RQST_LOG_LINK, NOR_IMG, SPELL_IMG, IMDB, \
+from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, MSG_ALRT, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, NOR_IMG, SPELL_IMG, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, SUPPORT_GROUP, SUPPORT_CHAT, HOW_DWLD_LINK, DELETE_TIME, SPL_DELETE_TIME
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums
@@ -568,7 +568,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
             InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url=GRP_LNK)
         ],[
-            InlineKeyboardButton('Bᴏᴛ Rᴇǫᴜᴇsᴛ Lᴏɢs Cʜᴀɴɴᴇʟ', url=RQST_LOG_LINK)
+            InlineKeyboardButton('Bᴏᴛ Rᴇǫᴜᴇsᴛ Lᴏɢs Cʜᴀɴɴᴇʟ', url='https://t.me/+PCYz7dwxANliMWIx')
         ],[
             InlineKeyboardButton('Nᴇᴡ ʜᴅ Mᴏᴠɪᴇ', url='https://t.me/+5M64kC0935k0MTFl'),
             InlineKeyboardButton('🏠 Mᴀɪɴ Mᴇɴᴜ', callback_data='start')
