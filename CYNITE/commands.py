@@ -8,7 +8,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, RQST_LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, SUPPORT_GROUP, RQST_LOG_LINK
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, RQST_LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, SUPPORT_GROUP
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 from database.connections_mdb import active_connection
 import re
@@ -632,7 +632,7 @@ async def request(bot, message):
     await grqmsg.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup( 
            [[
-               InlineKeyboardButton(text="🤖Jᴏɪɴ Lᴏɢs Cʜᴀɴɴᴇʟ🤖", url=RQST_LOG_LINK)
+               InlineKeyboardButton(text="🤖Jᴏɪɴ Lᴏɢs Cʜᴀɴɴᴇʟ🤖", url=f"https://t.me/+PCYz7dwxANliMWIx")
            ],
            [ 
                InlineKeyboardButton(text="‼️Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ‼️", url=f"{rqmsg.link}")
