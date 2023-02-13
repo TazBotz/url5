@@ -611,16 +611,13 @@ async def save_template(client, message):
 @Client.on_message((filters.regex("#request")) & filters.chat(chats=SUPPORT_GROUP))
 async def request(bot, message):
     if message.text in ['#request']:
-        await message.reply_text(
-        'Use Correct Format',
+        await message.reply_text(text='Use Correct Format',
         reply_markup=InlineKeyboardMarkup(
-            [
                 [
                     InlineKeyboardButton(
                         text="CANCEL", callback_data="close_data"
                     )
-                ],
-            ]
+                ]
         ),
         quote=True,
     )
