@@ -611,15 +611,15 @@ async def save_template(client, message):
 @Client.on_message((filters.regex("#request")) & filters.chat(chats=SUPPORT_GROUP))
 async def request(bot, message):
     if message.text == '#request':
-    button = InlineKeyboardButton(text='Join TechnicalCynite', url='https://t.me/TechnicalCynite')
-    keyboard = InlineKeyboardMarkup([[button]])
-    await message.reply_text(text='<code>𝚄𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙵𝙾𝚁𝙼𝙰𝚃...</code>', quote=True, reply_markup=keyboard)
-    return
+        button = InlineKeyboardButton(text='Join TechnicalCynite', url='https://t.me/TechnicalCynite')
+        keyboard = InlineKeyboardMarkup([[button]])
+        await message.reply_text(text='<code>𝚄𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙵𝙾𝚁𝙼𝙰𝚃...</code>', quote=True, reply_markup=keyboard)
+        return
     grqmsg = await message.reply_text(
-            text=script.REQUEST2_TXT,
-            disable_web_page_preview=True,
-            reply_to_message_id=message.id
-        )
+        text=script.REQUEST2_TXT,
+        disable_web_page_preview=True,
+        reply_to_message_id=message.id
+    )
     rqmsg = await bot.send_message(RQST_LOG_CHANNEL, script.REQUEST_TXT.format(message.text.replace("#request", ""), message.from_user.mention, message.from_user.id),
         reply_markup=InlineKeyboardMarkup( 
            [[
