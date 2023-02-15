@@ -511,6 +511,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "donealrd":
         await query.answer(text=script.DONE_ALREADY, show_alert=True)
 
+    elif query.data == "rqstfrmt":
+        await query.answer(text=script.RQSTFRMT, show_alert=True)
+
     elif query.data == "start":
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
