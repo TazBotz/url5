@@ -951,8 +951,11 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP): return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention, total_results, search), disable_web_page_preview=True)
-    else:
+    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP):
+        button = InlineKeyboardButton(text='Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ', callback_data='rqstfrmt')
+        keyboard = InlineKeyboardMarkup([[button]])
+        return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention, total_results, search), disable_web_page_preview=True, reply_markup=keyboard)
+        esle:
         btn = [
             [
                 InlineKeyboardButton(
