@@ -945,25 +945,22 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}",
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
         ]
-    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP):
-        button = InlineKeyboardButton(text='Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ', callback_data='rqstfrmt')
-        keyboard = InlineKeyboardMarkup([[button]])
-        return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention, total_results, search), disable_web_page_preview=True, reply_markup=keyboard)
-        esle:
+    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP): return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention if message.from_user else message.chat.title, total_results, search), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ', callback_data='rqstfrmt')]]))
+    else:
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", 
+                    text=f"{file.file_name}",
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}", 
+                    text=f"{get_size(file.file_size)}",
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
