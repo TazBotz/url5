@@ -361,7 +361,7 @@ Sᴛᴇᴘ²➲  Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ
     SGROUP_TXT = """
 <b>Dᴇᴀʀ, {}
 
-<code>{}</code> Rᴇsᴜʟᴛ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ Fᴏʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ <code>{}</code> Iɴ <a href=https://t.me/{} >Oᴜʀ Bᴏᴛ</a>.</b>
+<code>{}</code> Rᴇsᴜʟᴛ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ Fᴏʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ <code>{}</code> Iɴ <a href=https://t.me/Xyzautobot >Oᴜʀ Bᴏᴛ</a>.</b>
 """
 
     DONE_UPLOAD = """
