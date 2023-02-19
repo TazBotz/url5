@@ -569,12 +569,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "morchl":
         buttons = [[
             InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
-            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+5M64kC0935k0MTFl')
         ],[
             InlineKeyboardButton('Bᴏᴛ Rᴇǫᴜᴇsᴛ Lᴏɢs Cʜᴀɴɴᴇʟ', url='https://t.me/+PCYz7dwxANliMWIx')
         ],[
-            InlineKeyboardButton('Nᴇᴡ ʜᴅ Mᴏᴠɪᴇ', url='https://t.me/+5M64kC0935k0MTFl'),
-            InlineKeyboardButton('🏠 Mᴀɪɴ Mᴇɴᴜ', callback_data='start')
+            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url='https://t.me/+KkI3avbmG55mZGMx'),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+        ],[
+            InlineKeyboardButton('🏠 Mᴀɪɴ Mᴇɴᴜ 🏠', callback_data='start')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -951,7 +953,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP): return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention if message.from_user else message.chat.title, total_results, search), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ', url=GRP_LNK)]]))
+    elif msg.chat.id in filters.chat(chats=SUPPORT_GROUP): return await message.reply_text(script.SGROUP_TXT.format(message.from_user.mention if message.from_user else message.chat.title, total_results, search), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ', url='https://t.me/+KkI3avbmG55mZGMx')]]))
     else:
         btn = [
             [
