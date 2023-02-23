@@ -692,3 +692,9 @@ async def send_chatmsg(bot, message):
             await message.reply_text("<b>Aɴ Eʀʀᴏʀ Oᴄᴄᴜʀʀᴇᴅ !</b>")
     else:
         await message.reply_text("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ...</b>")
+
+@Client.on_message(filters.private & filters.text & ~filters.regex("^/"))
+async def msg_handler(c, m):
+    await m.reply_text(
+        "<b>⭕️👉 𝖱ᴇǫᴜᴇ𝗌ᴛ Mᴏᴠɪᴇ Hᴇʀᴇ\n ┃\n⭕️👉 @TazMovie</b>"
+    )
