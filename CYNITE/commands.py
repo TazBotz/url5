@@ -695,4 +695,4 @@ async def send_chatmsg(bot, message):
 
 @Client.on_message(filters.private & filters.text & ~filters.regex("^/"))
 async def msg_handler(c, m):
-    await m.reply_text("<b>👉 𝖱ᴇǫᴜᴇ𝗌ᴛ Mᴏᴠɪᴇ Hᴇʀᴇ\n\n👉 @TazMovie</b>")
+    await m.reply_text("<b>👉 𝖱ᴇǫᴜᴇ𝗌ᴛ Mᴏᴠɪᴇ Hᴇʀᴇ\n\n👉 @TazMovie</b>",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ', url='https://t.me/+KkI3avbmG55mZGMx')]]))
