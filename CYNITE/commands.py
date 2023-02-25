@@ -611,9 +611,9 @@ async def save_template(client, message):
 @Client.on_message((filters.regex("#request")) & filters.chat(chats=SUPPORT_GROUP))
 async def request(bot, message):
     if message.text == '#request':
-        button = InlineKeyboardButton(text='Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ', callback_data='rqstfrmt')
+        button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
         keyboard = InlineKeyboardMarkup([[button]])
-        await message.reply_text(text='<code>𝚄𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙵𝙾𝚁𝙼𝙰𝚃...</code>', quote=True, reply_markup=keyboard)
+        await message.reply_text(text='<b>Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
         return
     grqmsg = await message.reply_text(
         text=script.REQUEST2_TXT,
