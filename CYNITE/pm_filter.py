@@ -27,9 +27,6 @@ from database.gfilters_mdb import (
 )
 import logging
 
-import os
-req_channel = int(os.environ.get('REQ_CHANNEL', '-1001614656948'))
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
@@ -934,7 +931,6 @@ async def auto_filter(client, msg, spoll=False):
             search = message.text
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
-                await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝Content Name :{search}\nRequested By: {message.from_user.first_name}\n USER ID:{message.from_user.id}\n\n🗃", reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(text="🔍 Gᴏ Tᴏ Tʜᴇ Mᴇssᴀɢᴇ 🔎", url=f"{message.link}") ], [ InlineKeyboardButton(text="🉐 Sʜᴏᴡ Oᴘᴛɪᴏɴs 🉐", callback_data=f"morbtn {message.id}") ]]))
                 if settings["spell_check"]:
                     return await advantage_spell_chok(msg)
                 else:
