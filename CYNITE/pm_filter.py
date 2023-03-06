@@ -781,7 +781,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="✅️ Uᴘʟᴏᴀᴅᴇᴅ ✅️", callback_data="doneupld")],[InlineKeyboardButton(text="Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ", url=GRP_LNK)]])
         )
-        await client.send_message(SUPPORT_GROUP, text=script.DONE_UPLOAD2,
+        await client.send_message(text=script.DONE_UPLOAD2,
             reply_to_message_id=int(mess_id),
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔍Pʟᴇᴀꜱᴇ Sᴇᴀʀᴄʜ Hᴇʀᴇ🔍", url=f"https://t.me/+AJCnlql9y4o4MjJl")],[InlineKeyboardButton(text="✅Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ✅", url=f"{query.message.link}")]]),
         )            
