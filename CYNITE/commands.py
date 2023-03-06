@@ -608,7 +608,7 @@ async def save_template(client, message):
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"**Sᴜᴄᴄᴇssғᴜʟʟʏ Cʜᴀɴɢᴇᴅ Tᴇᴍᴘʟᴀᴛᴇ Fᴏʀ `{title}` Tᴏ**\n\n`{template}`")
 
-@Client.on_message((filters.regex("#request")) & filters.chat(chats=SUPPORT_GROUP))
+@Client.on_message((filters.regex("#request")))
 async def request(bot, message):
     if message.text == '#request':
         button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
